@@ -30,7 +30,7 @@ liko install
 The module can now be used from any directory within the current module.
 
 ```liko
-#Core: import "external/kubernetes/v1.37.0/api/core/v1"
+#Core: import "kubernetes/api/core/v1"
 
 serviceAccount: #Core.ServiceAccount & {
     metadata: {
