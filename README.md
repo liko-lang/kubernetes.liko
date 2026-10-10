@@ -33,9 +33,9 @@ The module can now be used from any directory within the current module.
 #Core: import "external/kubernetes/v1.37.0/api/core/v1"
 
 serviceAccount: #Core.ServiceAccount & {
-metadata: {
-name: "my-sa"
-namespace: "my-ns"
-}
+    metadata: {
+        name: "my-sa"
+        namespace: "my-ns"
+    }
 }
 ```
