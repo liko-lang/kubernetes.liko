@@ -223,7 +223,7 @@
     // - TargetEvicted means that the target has been evicted (e.g. a pod has been terminated or
     // deleted).
     //
-    //         The maximum length of the conditions list is 100.
+    //  The maximum length of the conditions list is 100.
     conditions?: [#MetaV1.Condition]
     // observedGeneration is Eviction's .metadata.generation observed by the
     // evictionrequest-controller. The observed generation value cannot be negative and can only be
@@ -355,10 +355,10 @@
     //   If .status.responders[].heartbeatTime field is not updated within the heartbeat deadline
     // defined
     //   by the Eviction API (currently 20 minutes), the eviction is passed over to the next responder
-    //          with a lower priority. Only one responder can be active at a time.
+    //   with a lower priority. Only one responder can be active at a time.
     // - Interrupted means that the responder has failed to start or failed to update
     //   heartbeatTime in ResponderStatus in a timely manner.
-    // - Canceled means that the responder has been canceled. In other words, there    is no
+    // - Canceled means that the responder has been canceled. In other words, there is no
     //   EvictionRequest with the same target and Eviction intent in .spec.intent.
     // - Completed means that the responder has successfully completed and set completionTime
     //   in ResponderStatus.
